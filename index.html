@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Live Bitcoin Price</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Current Bitcoin Price: <span class="currentPrice"></span></h1>
+
+    <p class="refreshed">Last refreshed: <span class="lastRefresh"></span></p>
+    <div class="whatcurrency">
+      <p>What currency:</p>
+
+      <input class="radios" id="_USD" type="radio" name="currency" value="USD" checked="checked">USD<br>
+      <input class="radios" id="_GBP" type="radio" name="currency" value="GBP">GBP<br>
+      <input class="radios" id="_EUR" type="radio" name="currency" value="EUR">EUR<br>
+    </div>
+      <button class="btn">Refresh Data</button>
+    </div>
+
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
