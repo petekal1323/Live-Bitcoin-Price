@@ -1,6 +1,6 @@
 var btn = document.querySelector(".btn");
 var priceDisplay = document.querySelector(".currentPrice");
-var lastRefresh = document.querySelector('.lastRefresh');
+var lastRefresh = document.querySelector('.lastRefresh')
 
 
 var value;
@@ -31,7 +31,7 @@ btn.addEventListener("click", function(){
     if(XHR.readyState == 4 && XHR.status == 200){
       var data = JSON.parse(XHR.responseText);
       var price = data.bpi[value].rate;
-      priceDisplay.innerText = price.toFixed(2) + " " + value;
+      priceDisplay.innerText = price + " " + value;
       lastRefresh.innerHTML = Date();
     }
   }
